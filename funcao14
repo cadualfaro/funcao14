@@ -1,0 +1,23 @@
+package aval3;
+    import java.util.Scanner;
+public class Aval3 {
+    static void dois(int mult){//Criando função recursiva chamada dois com parametro int mult
+        int valor = 1;
+        
+    for(int i = 0; i < mult;i++){//Laço de repetição de i iniciando em 0 e adicionando +1 enquanto i for menor que mult
+        int resultado = valor*2;//Criação da variável resultado que vai armazenar o resultado do valor=1 multiplicado por 2
+            System.out.println(resultado);//mostrando resultado
+                valor = resultado;//armazenando resultado em valor dentro do laço de repetição
+        }
+    }
+    public static void main(String[] args) {
+        Scanner my_scan = new Scanner(System.in);
+        
+        System.out.println("Insira a quantidade de multiplicações: ");
+            int max = my_scan.nextInt();//criação da variável max que vai armazenar a quantidade máxima de multiplicações digitada pelo usuário
+                System.out.println("");
+        
+        dois(max);//Chamando a função recursiva chamada dois e passando max como parametro para substituir parametro mult da função
+    }
+    
+}
